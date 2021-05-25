@@ -9,7 +9,6 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,13 +21,61 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./static/styles/animate.css" />
 
     <link rel="stylesheet" href="static/styles/styles.css" />
 
     <title>Safaris</title>
   </head>
   <body>
-    <header>
+    <section>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url('./static/images/Sliders/elephants.jpg ');
+            "
+          >
+            <!-- <img src="./static/images/Sliders/elephants.jpg " alt="" /> -->
+          </div>
+          <div class="swiper-slide">
+            <img src="./static/images/Sliders/falls.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./static/images/Sliders/giraffes.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./static/images/Sliders/maasai.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./static/images/Sliders/Mombasa.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./static/images/Sliders/mtKenya.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./static/images/Sliders/Pride-lions.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./static/images/Sliders/sunset.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./static/images/Sliders/wildbeasts.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./static/images/Sliders/Zebras.jpg" alt="" />
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <header class="header">
       <div class="head_bar">
         <div class="icon_bar col-lg-4">
           <div class="social-icons" id="facebook">
@@ -119,7 +166,7 @@
         <div class="container">
           <div class="row nav-row">
             <div class="col-lg-4">
-              <img src="static/images/malikale.png" alt="" />
+              <img src="static/images/malikale.png" class="logoImg" alt="" />
             </div>
 
             <div class="col-lg-8 navigation">
@@ -137,10 +184,7 @@
                     <a class="nav-link" href="#">HOME </a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      data-toggle="dropdown"
-                    >
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">
                       ABOUT US
                     </a>
                     <ul class="dropdown-menu">
@@ -242,12 +286,14 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="./pages/gallery.html">
                       GALLERY
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#"> CONTACTS</a>
+                    <a class="nav-link" href="./pages/Contact.html">
+                      CONTACTS</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -259,18 +305,311 @@
     </header>
 
     <main>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          <div class="swiper-slide">Slide 4</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 9</div>
-          <div class="swiper-slide">Slide 10</div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 contentDiv">
+            <div class="divTitle">
+              <h1>WELCOME TO MALIKALE AFRICA SAFARIS</h1>
+            </div>
+            <div class="divContent">
+              <p>
+                <img src="./static/images/Body/Serengeti-300x164.jpg" alt="" />
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
+                voluptates sunt nesciunt at enim velit dicta tenetur placeat
+                facere, voluptas temporibus dolorum a ea! Nisi vel maxime
+                architecto maiores ut. Aliquid explicabo error commodi
+                cupiditate nulla. Fugit ullam eveniet, similique nulla minima
+                assumenda! Dolorem exercitationem nemo tempore ut? Placeat omnis
+                debitis voluptatum pariatur illo labore. Porro iure alias
+                deleniti quod.0
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 contentDiv">
+            <div class="divTitle">
+              <h1>MALI KALE OFFERS CUSTOMIZED SAFARIS TO TRAVELERS</h1>
+            </div>
+            <div class="divBody">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
+                eaque nemo obcaecati
+              </p>
+              <ul>
+                <li style="list-style: none;">
+                  <i class="fas fa-check" style="color: aqua;"></i> Lorem
+                </li>
+                <li style="list-style: none;">
+                  <i class="fas fa-check" style="color: aqua;"></i> Lorem
+                </li>
+                <li style="list-style: none;">
+                  <i class="fas fa-check" style="color: aqua;"></i> Lorem
+                </li>
+                <li style="list-style: none;">
+                  <i class="fas fa-check" style="color: aqua;"></i> Lorem
+                </li>
+                <li style="list-style: none;">
+                  <i class="fas fa-check" style="color: aqua;"></i> Lorem
+                </li>
+              </ul>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                veritatis, numquam quod doloribus aliquam omnis at aut fugiat,
+                amet eveniet modi sit suscipit nesciunt natus illum possimus
+                neque sunt eius.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <h1>KARIBUSANA MALI KALE AFRICA.</h1>
+          </div>
+          <div
+            class="wow fadeInLeft col-lg-6 contentCard"
+            data-wow-duration="2s"
+            data-wow-delay="1s"
+          >
+            <div class="col-12 divTitle" style="padding: 10px;">
+              <h3>Northern Circuit</h3>
+            </div>
+            <div class="col-6">
+              <div class="imgDiv">
+                <img
+                  src="./static/images/Body/serena_safari_lodge.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-6 cardContentDiv">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus dolorum quis ipsam in id iusto non sunt magnam
+                nisi dolor, tempora rem expedita minima placeat. Perspiciatis
+                reprehenderit neque sapiente repellendus!
+              </p>
+              <button class="btn btn-success">
+                Read More
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="wow fadeInRight col-lg-6 contentCard"
+            data-wow-duration="2s"
+            data-wow-delay="1.5s"
+          >
+            <div class="col-12 divTitle" style="padding: 10px;">
+              <h3>Southern Circuit</h3>
+            </div>
+            <div class="col-6">
+              <div class="imgDiv">
+                <img src="./static/images/Body/luxLodge.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-6 cardContentDiv">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus dolorum quis ipsam in id iusto non sunt magnam
+                nisi dolor, tempora rem expedita minima placeat. Perspiciatis
+                reprehenderit neque sapiente repellendus!
+              </p>
+              <button class="btn btn-success">
+                Read More
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="wow fadeInLeft col-lg-6 contentCard"
+            data-wow-duration="2s"
+            data-wow-delay="1s"
+          >
+            <div class="col-12 divTitle" style="padding: 10px;">
+              <h3>Family Safaris</h3>
+            </div>
+            <div class="col-6">
+              <div class="imgDiv">
+                <img src="./static/images/Body/fam.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-6 cardContentDiv">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus dolorum quis ipsam in id iusto non sunt magnam
+                nisi dolor, tempora rem expedita minima placeat. Perspiciatis
+                reprehenderit neque sapiente repellendus!
+              </p>
+              <button class="btn btn-success">
+                Read More
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="wow fadeInRight col-lg-6 contentCard"
+            data-wow-duration="2s"
+            data-wow-delay="1.5s"
+          >
+            <div class="col-12 divTitle" style="padding: 10px;">
+              <h3>Mountain Climbing</h3>
+            </div>
+            <div class="col-6">
+              <div class="imgDiv">
+                <img src="./static/images/Body/kenya.png" alt="" />
+              </div>
+            </div>
+            <div class="col-6 cardContentDiv">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus dolorum quis ipsam in id iusto non sunt magnam
+                nisi dolor, tempora rem expedita minima placeat. Perspiciatis
+                reprehenderit neque sapiente repellendus!
+              </p>
+              <button class="btn btn-success">
+                Read More
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="wow fadeInLeft col-lg-6 contentCard"
+            data-wow-duration="2s"
+            data-wow-delay="1s"
+          >
+            <div class="col-12 divTitle" style="padding: 10px;">
+              <h3>Beach Holidays</h3>
+            </div>
+            <div class="col-6">
+              <div class="imgDiv">
+                <img src="./static/images/Body/beach.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-6 cardContentDiv">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus dolorum quis ipsam in id iusto non sunt magnam
+                nisi dolor, tempora rem expedita minima placeat. Perspiciatis
+                reprehenderit neque sapiente repellendus!
+              </p>
+              <button class="btn btn-success">
+                Read More
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="wow fadeInRight col-lg-6 contentCard"
+            data-wow-duration="2s"
+            data-wow-delay="1.5s"
+          >
+            <div class="col-12 divTitle" style="padding: 10px;">
+              <h3>Bush & Beach Safaris</h3>
+            </div>
+            <div class="col-6">
+              <div class="imgDiv">
+                <img src="./static/images/Body/zanzibar.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-6 cardContentDiv">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus dolorum quis ipsam in id iusto non sunt magnam
+                nisi dolor, tempora rem expedita minima placeat. Perspiciatis
+                reprehenderit neque sapiente repellendus!
+              </p>
+              <button class="btn btn-success">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer" style="color: #fff;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 footerImg">
+              <img src="./static/images/malikale.png" alt="" />
+              <img src="./static/images/Body/logo-bookmundi.jpg" alt="" />
+            </div>
+            <div class="col-lg-4">
+              <h4>OUR CONTACT DETAILS</h4>
+              <ul class="contactDetails">
+                <li><i></i> Richard Boniventure</li>
+                <li><i></i> Mali Kale Africa Safaris</li>
+                <li><i></i> P.O. Box 12606</li>
+                <li><i></i> +255 739 978783</li>
+                <li><i></i> +255 784 327359</li>
+                <li><i></i> info@malikale.com</li>
+                <li><i></i> http://malikale.com</li>
+                <li><i></i> malikale.africasafaris</li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h3>Contact Us</h3>
+              <form
+                id="contact-form"
+                method="post"
+                action="#"
+                class="contact-form"
+              >
+                <div class="controls">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="name">Your firstname *</label>
+                        <input
+                          type="text"
+                          name="name"
+                          placeholder="Enter your firstname"
+                          required="required"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="surname">Your lastname *</label>
+                        <input
+                          type="text"
+                          name="surname"
+                          placeholder="Enter your  lastname"
+                          required="required"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="surname">Your email *</label>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Enter your  email"
+                      required="required"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="surname">Your message for us *</label>
+                    <textarea
+                      rows="4"
+                      name="message"
+                      placeholder="Enter your message"
+                      required="required"
+                      class="form-control"
+                    ></textarea>
+                  </div>
+                  <div class="text-center">
+                    <input
+                      style="margin: 20px;"
+                      type="submit"
+                      name="name"
+                      value="Send message"
+                      class="btn btn-success btn-block"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -292,14 +631,39 @@
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
       type="text/javascript"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+      integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
       integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
       crossorigin="anonymous"
     ></script>
+    <script src="./static/js/wow.min.js"></script>
 
     <script>
+      new WOW().init();
+      // Nvbar stuff
+      $(document).scroll(function () {
+        if ($(window).scrollTop() >= $("header").offset().top) {
+          $("nav").addClass("sticky");
+          $(".logoImg").addClass("height");
+        } else {
+          $("nav").removeClass("sticky");
+          $(".logoImg").removeClass("height");
+        }
+      });
+
+      $("body").scrollspy({
+        target: ".navbar",
+        offset: 80,
+      });
+
+      // Swiper Stuff
       $(document).on("click", ".dropdown-menu", function (e) {
         e.stopPropagation();
       });
@@ -323,7 +687,7 @@
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-          delay: 2500,
+          delay: 4000,
           disableOnInteraction: false,
         },
         pagination: {
@@ -335,6 +699,8 @@
           prevEl: ".swiper-button-prev",
         },
       });
+
+      // WOW
     </script>
   </body>
 </html>
