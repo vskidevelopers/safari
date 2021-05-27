@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../static/styles/styles.css" />
+
+    <title>Booking</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- NavBar -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <div class="row nav-row">
+            <div class="col-lg-4">
+              <img
+                src="../static/images/malikale.png"
+                class="logoImg"
+                alt=""
+                loading="lazy"
+                style="height: 50px;"
+              />
+            </div>
+
+            <div class="col-lg-8 navigation">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#main_nav"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">HOME </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      data-toggle="dropdown"
+                    >
+                      ABOUT US
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">Booking Conditions</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      data-toggle="dropdown"
+                    >
+                      SAFARIS
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          Northern Circuit Itineraries
+                        </a>
+                        <ul class="submenu dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="">
+                              2 days, 1 night – Northern Circuit</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href=""
+                              >3 Days, 2 Nights – Northern Circuit</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="">
+                              Serengeti 3 Days Fly-in Safari from Zanzibar</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="">
+                              4 days, 3 nights – Northern Circuit 1</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          Kilimanjaro Treaking
+                        </a>
+                        <ul class="submenu dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="">
+                              7 Days Mt Kilimanjaro – Marangu Route</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href=""
+                              >7 Days, Mt Kilimanjaro – Machame Route</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="">
+                              7 Days, Mt Kilimanjaro – Rongai Route</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="">
+                              7 Days, Mt Kilimanjaro – Umbwe Route</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      data-toggle="dropdown"
+                    >
+                      ABOUT TANZANIA
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="">
+                          More Infomation About Tanzania</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="">
+                          Tanzania National parks and Game Reserves</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./gallery.html">
+                      GALLERY
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Contact.html"> CONTACTS</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- navbar-collapse.// -->
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        style="
+          height: 30vh;
+          background-image: url('../static/images/Sliders/sunset.jpg');
+          background-size: cover;
+          background-position: top;
+        "
+      >
+        <h1
+          style="
+            padding: 100px;
+            color: #fff;
+            text-shadow: -5px 3px 1px rgb(27 28 28);
+            font-size: 70px;
+          "
+        >
+          Booking Conditions
+        </h1>
+      </section>
+      <div class="container bookindiv" style="padding: 30px 0;">
+        <h2>THE BOOKING.</h2>
+        <p>
+          * Bookings and subsequent contracts shall be deemed to have been
+          concluded in Arusha, Tanzania and shall be interpreted according to
+          the laws of the United Republic of Tanzania.
+        </p>
+        <p>
+          * The Company reserves the right to decline any booking without
+          outlining the reasons for it.
+        </p>
+        <p>Reservations.Shall be confirmed in writing FAX /E-Mail.</p>
+        <h2>DEPOSIT &amp; PAYMENTS.</h2>
+        <p>
+          * A deposit of (35% Camping) (35% &#8211; 50% Lodge) of the total tour
+          cost is required on confirmation of reservation. The remaining balance
+          must be paid not later than eight (8) weeks prior to the safari
+          commencing. Reservations made and confirmed less than six (6) weeks to
+          departure of the safari are only considered as confirmed if the total
+          cost of the safari is paid on reservation.
+        </p>
+        <p>
+          * All bank charges are to be settled by the client or agent
+          respectively. This includes transaction fees charged by our bank. The
+          amount shown on the invoice, is the amount that needs to reflect in
+          our account and should bank charges have been deducted, we would have
+          to invoice you subsequently.
+        </p>
+        <h2>CANCELLATIONS.</h2>
+        <p>
+          * Cancellations of a reservation must be received in writing to the
+          office that confirmed the reservation and shall only be effective from
+          the date of receipt of the cancellation by the booking office.
+          Cancellations are liable to the following charges calculated from the
+          date of receipt of the notification and based on the total cost of the
+          tour. Eight to six weeks prior to departure loss of deposit. Six to
+          three weeks prior to departure 50% of total cost. Three to one weeks
+          prior to departure, 75% of total cost. Less than one (1) week prior to
+          departure of tour 100% of total cost.
+        </p>
+        <h2>REFUNDS.</h2>
+        <p>* No refunds are given for</p>
+        <ul>
+          <li>
+            Lost travel time or substitution of advertised
+            facilities/accommodation
+          </li>
+          <li>tineraries amended after departure.</li>
+          <li>
+            Circumstances arising beyond the company control necessitating
+            alternative arrangements to be made to ensure the safety and or
+            further participation of and enjoyment of your program.
+          </li>
+          <li>
+            Not appearing for any accommodation, sight- seeing, game drive,
+            booked activities, without notifying the company in writing two (2)
+            working days in advance.
+          </li>
+          <li>Cutting short the booked itinerary for whatever reason.</li>
+          <li>There will be no refunds for unused services.</li>
+        </ul>
+        <h2>PRICES.</h2>
+        <p>
+          * Rates are quoted in U.S Dollars. All prices are based on tariffs
+          applicable at the time of printing and are subject to change without
+          notice.
+        </p>
+        <p>
+          Increases in park fee&#8217;s entrance fee&#8217;s guide fee&#8217;s
+          Government levies are subject to increase&#8217;s often without due
+          warning and are subject to change without notice.
+        </p>
+        <h2>MARKETING.</h2>
+        <p>
+          * The Company reserves the right to use any photographs and videos
+          taken during tours for marketing or any other advertising material.
+          The client hereby gives consent to use such photographs and authorizes
+          the Company to retain copyright for these photographs and such
+          material.
+        </p>
+        <h2>COLLECTIONS / TRANSFERS.</h2>
+        <p>
+          * All tours start and end with collection from and return to any
+          centrally located hotel in the main cities / town. If an out of town
+          hotel or airport or a boarder transfer is required, a supplement will
+          be charged. Unless otherwise specified in the tour itinerary.
+        </p>
+        <h2>ACCOMMODATIONS.</h2>
+        <p>
+          * Based in lodges, hotels, and tented safari camps, or mobile camps
+          depending on the type of tour booked in shared occupancy of twin
+          bedded rooms / tents/ where applicable/ attached bath / shower.
+        </p>
+        <p>A supplement will be charged for single room/tent requests.</p>
+        <h2>MEALS.</h2>
+        <p>
+          * Full board, three meals per day, breakfast, lunch/packed lunch and
+          dinner whilst on safari. In the main towns and cities, the meal plan
+          is included in the tour itinerary.
+        </p>
+        <h2>BAGGAGE.</h2>
+        <p>
+          * At any time, all baggage and personal effects are at the client’s
+          responsibility and the Company does not accept any liability for any
+          loss or damage of any personal effects, howsoever arising.
+        </p>
+        <p>
+          * Clients are entitled to one bag of not more than 15 kg (backpack or
+          soft bag &#8211; no hardtop suitcase) and a daypack. The Company
+          reserves the right to refuse excess baggage. Please notice that on our
+          trekking tours and on some &#8220;bush&#8221; flights other baggage
+          regulations may apply.
+        </p>
+        <p>
+          Tour cost does not include. All costs of a personal nature i.e.;
+          laundry, beverages, portage, tips, transfers on arrival and departure,
+          airport taxes, visa fees, domestic air fares, public transportation,
+          and driver/guide gratuities, air transportation to game reserves, or
+          national parks, entrance fees to museums, unless otherwise specified.
+        </p>
+        <h2>CANCELLATION BY THE COMPANY.</h2>
+        <p>
+          In the unfortunate event that the company has to cancel the
+          reservation it has made it will offer alternative services of a
+          similar standard or return all monies paid.
+        </p>
+        <h2>LIABILITY.</h2>
+        <p>
+          Whilst the company provides all the services, to the best of its
+          ability for your comfort and safety, it should be understood that all
+          safaris are undertaken at the risk of the client.
+        </p>
+        <h2>INFORMATION IN THE BROCHURE.</h2>
+        <p>
+          * All information given in the tariff and brochure and web sites is to
+          the company knowledge, correct at the time of going to press but the
+          company reserves the right to change the same. The photographs
+          reproduced and information provided in this brochure/web site, depict
+          typical scenes experienced and details on each destination; but the
+          subject or scene may not necessarily be seen or experienced while
+          visiting the destination.
+        </p>
+        <h2>TERMS and CONDITIONS.</h2>
+        <p>
+          * These terms and conditions govern the relationship between the
+          company and you (the client), to the total exclusion of any other
+          terms and conditions. No alterations to the terms and conditions may
+          be made by any of the company employees, authorized representative or
+          agents unless in writing by the managing director of the company or
+          the company official spokesman. All decisions and matters are subject
+          to the company discretion.
+        </p>
+        <p>FLEXIBILITY.</p>
+        <p>
+          * The client appreciates and acknowledges that the nature of this type
+          of travel requires considerable flexibility and should allow for
+          alternatives. The outline itinerary as given for each tour must
+          therefore be taken as an indication of what each tour/group may
+          accomplish and not as a contractual obligation on the part of the
+          company. It is understood that the route, schedules, itineraries,
+          amenities and mode of transport may be subject to alteration without
+          prior notice due to local circumstances or events, which may include
+          sickness or mechanical breakdown, flight, strikes, cancellations,
+          events emanating from political disputes, entry or boarder
+          difficulties, climate and other unpredictable or unforeseeable
+          circumstances.
+        </p>
+        <h2>ACCEPTANCE OF RISK.</h2>
+        <p>
+          * The client acknowledges that the nature of the tour is expeditionary
+          and adventurous and that such holidays may involve a significant
+          amount of personal risk. Such risks include injury, disease, loss or
+          damage to property, discomfort and inconvenience. In particular the
+          client acknowledges that travelling in vehicles fitted with a roof
+          seat or travelling in any position other than seated in the seats
+          provided inside the vehicle is entirely at the clients own risk.
+        </p>
+        <h2>AUTHORITY ON TOURS.</h2>
+        <p>
+          * At all times the decision of the company tour leader or
+          representative will be final on all matters likely to endanger the
+          safety and the smooth running continuation of the tour. The client
+          must at all times strictly comply with the laws, customs, foreign
+          exchange and drug regulations of all countries visited. Should the
+          client fail to comply with the above, or should the client interfere
+          with the well being of the group then the tour leader or company
+          representative may order the client to leave the tour without recourse
+          to any refund.
+        </p>
+        <h2>TRAVEL DOCUMENTS.</h2>
+        <p>
+          * The client must be in possession of a valid travel document and all
+          visas, permits and certificates, required for the whole journey and
+          the client accepts responsibility for obtaining the same. Any
+          information or advice given by the company on visas, vaccinations,
+          climate, clothing, baggage, special equipment, etc. is given in good
+          faith but without responsibility on the part of the company.
+        </p>
+        <h2>FORCE MAJEURE.</h2>
+        <p>
+          * Factors outside the company control (Force Majeure). The company
+          will do its best to minimize the effects of matters outside its
+          control but cannot accept any liability for these matters which
+          include political disputes, boarder closures, refusal of visas,
+          industrial action, delayed flights, unforeseeable climate, etc.
+        </p>
+        <p>
+          * Clients responsibility for personal travels insurance. The client is
+          willing to accept full responsibility for insurance up to limits that
+          the clients may require. This insurance must cover personal accident,
+          medical expenses, air ambulance, loss of personal effects,
+          repatriation costs, and all other expenses which might arise as a
+          result of loss, damage, injury, delay or inconvenience occurring to
+          the client. It is compulsory that all clients have personal travel
+          insurance. This policy must include the minimum costs of medical and
+          repatriation expenses.
+        </p>
+        <p>
+          * Clients responsibility for effecting other insurance. The client is
+          strongly advised to take out cancellation and curtailment insurance.
+          The client acknowledges that insurance provision in respect of spouse
+          and any other dependents is an important matter for which the client
+          accepts full responsibility.
+        </p>
+        <p>
+          * Claims and complaints. If a client has a complaint against the
+          company the client must first inform the tour leader or company
+          representative whilst on tour in order that the tour leader or
+          representative can attempt to rectify the matter. Any further
+          complaint must be put in writing to the company within thirty days
+          after the tour ending.
+        </p>
+      </div>
+
+      <div class="footer" style="color: #fff;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 footerImg">
+              <img src="../static/images/malikale.png" alt="" />
+              <img src="../static/images/Body/logo-bookmundi.jpg" alt="" />
+            </div>
+            <div class="col-lg-4">
+              <h4>OUR CONTACT DETAILS</h4>
+              <ul class="contactDetails">
+                <li><i></i> Richard Boniventure</li>
+                <li><i></i> Mali Kale Africa Safaris</li>
+                <li><i></i> P.O. Box 12606</li>
+                <li><i></i> +255 739 978783</li>
+                <li><i></i> +255 784 327359</li>
+                <li><i></i> info@malikale.com</li>
+                <li><i></i> http://malikale.com</li>
+                <li><i></i> malikale.africasafaris</li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h3>Contact Us</h3>
+              <form
+                id="contact-form"
+                method="post"
+                action="#"
+                class="contact-form"
+              >
+                <div class="controls">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="name">Your firstname *</label>
+                        <input
+                          type="text"
+                          name="name"
+                          placeholder="Enter your firstname"
+                          required="required"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="surname">Your lastname *</label>
+                        <input
+                          type="text"
+                          name="surname"
+                          placeholder="Enter your  lastname"
+                          required="required"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="surname">Your email *</label>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Enter your  email"
+                      required="required"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="surname">Your message for us *</label>
+                    <textarea
+                      rows="4"
+                      name="message"
+                      placeholder="Enter your message"
+                      required="required"
+                      class="form-control"
+                    ></textarea>
+                  </div>
+                  <div class="text-center">
+                    <input
+                      style="margin: 20px;"
+                      type="submit"
+                      name="name"
+                      value="Send message"
+                      class="btn btn-success btn-block"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+      integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+      integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
