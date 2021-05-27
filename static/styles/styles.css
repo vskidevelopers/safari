@@ -228,3 +228,13 @@ h3 {
 strong {
   color: #014407;
 }
+
+/* booking */
+.bookindiv h2 {
+  font-size: 30px;
+  font-family: cursive;
+}
+
+.bookindiv p {
+  font-family: serif;
+}
