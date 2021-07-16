@@ -29,134 +29,126 @@
   </head>
   <body>
     <header class="header">
-      <!-- NavBar -->
-      <nav class="navbar navbar-expand-lg fixed-top">
+      <nav class="navbar navbar-expand-lg sticky">
         <div class="container">
-          <div class="row nav-row">
-            <div class="col-lg-4">
-              <img
-                src="../static/images/malikale.png"
-                class="logoImg"
-                alt=""
-                loading="lazy"
-                style="height: 50px;"
-              />
-            </div>
+          <img
+            class="navbar-brand logoImg height"
+            src="../static/images/malikale.png"
+            alt=""
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="border: 1px solid #fffefefc;"
+          >
+            Menu
+          </button>
 
-            <div class="col-lg-8 navigation">
-              <button
-                style="background-color: aqua;"
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="../index.html">HOME </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav"
+              style="margin-left: auto; margin-right: 250px;"
+            >
+              <li class="nav-item active">
+                <a class="nav-link" href="../index.html"
+                  >HOME <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown">
+                  ABOUT US
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./aboutUs.html">
+                      Malikale Africa (K)
+                    </a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      data-toggle="dropdown"
+                  <li>
+                    <a class="dropdown-item" href="./bookin.html"
+                      >Booking Conditions</a
                     >
-                      ABOUT US
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="./aboutUs.html"
-                          >Malikale (k)</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      data-toggle="dropdown"
-                    >
-                      SAFARIS
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="./Samburu.html">
-                          3 DAYS SAMBURU GAME RESERVE SAFARI
-                        </a>
-                      </li>
-
-                      <li>
-                        <a class="dropdown-item" href="./vasha.html">
-                          4 DAYS LAKES NAKURU & NAIVASHA AREA ATTRACTIONS
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="./nakuru.html">
-                          4-Day Masai Mara and Lake Nakuru
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="./tsavo.html">
-                          5 DAYS TSAVO WEST, AMBOSELI, TSAVO EAST NATIONAL PARKS
-                          GAME SAFARI
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="./mara.html">
-                          6 DAYS MASAI MARA
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="./north.html">
-                          7-Day Northern & Southern Kenya Savannah Private
-                          Safari
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="./mombasa.html">
-                          8-Day Safari (Including Maasai Mara) & Mombasa
-                          Extension
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      data-toggle="dropdown"
-                    >
-                      ABOUT TANZANIA
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="">
-                          More Infomation About Tanzania</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="">
-                          Tanzania National parks and Game Reserves</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./gallery.html">
-                      GALLERY
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./Contact.html"> CONTACTS</a>
                   </li>
                 </ul>
-              </div>
-              <!-- navbar-collapse.// -->
-            </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-toggle="dropdown"
+                >
+                  SAFARIS
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./Samburu.html">
+                      3 DAYS SAMBURU GAME RESERVE SAFARI
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="./vasha.html">
+                      4 DAYS LAKES NAKURU & NAIVASHA AREA ATTRACTIONS
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./nakuru.html">
+                      4-Day Masai Mara and Lake Nakuru
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./tsavo.html">
+                      5 DAYS TSAVO WEST, AMBOSELI, TSAVO EAST NATIONAL PARKS
+                      GAME SAFARI
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./mara.html">
+                      6 DAYS MASAI MARA
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./north.html">
+                      7-Day Northern & Southern Kenya Savannah Private Safari
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./mombasa.html">
+                      8-Day Safari (Including Maasai Mara) & Mombasa Extension
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./gallery.html">
+                  GALLERY
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=".Contact.html"> CONTACTS</a>
+              </li>
+            </ul>
+            <ul class="my-2 my-lg-0 navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fab fa-facebook"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link"> <i class="fab fa-twitter"></i></a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -172,17 +164,13 @@
         "
       >
         <h1
-          style="
-            padding: 100px;
-            color: #fff;
-            text-shadow: -5px 3px 1px rgb(27 28 28);
-            font-size: 70px;
-          "
+          class="aboutustxt"
+          style="color: #fff; text-shadow: -5px 3px 1px rgb(27 28 28);"
         >
           Booking Conditions
         </h1>
       </section>
-      <div class="container bookindiv" style="padding: 30px 0;">
+      <div class="container bookindiv">
         <h2>THE BOOKING.</h2>
         <p>
           * Bookings and subsequent contracts shall be deemed to have been

@@ -69,10 +69,6 @@ nav {
   background-color: #ba8151;
 }
 
-.navigation {
-  display: flex;
-}
-
 .navbar-expand-lg .navbar-nav .nav-link {
   color: #fff;
 }
@@ -82,9 +78,9 @@ nav {
   text-decoration: underline green;
 }
 .dropdown-menu .dropdown-toggle:after {
-  border-top: 0.3em solid transparent;
+  border-top: 0.3em solid;
   border-right: 0;
-  border-bottom: 0.3em solid transparent;
+  border-bottom: 0.3em solid;
   border-left: 0.3em solid;
 }
 .dropdown-menu .dropdown-menu {
@@ -110,9 +106,7 @@ nav {
 .dropdown-menu > li:hover > .submenu {
   display: block;
 }
-.navbar-toggler-icon {
-  border: 2px solid white;
-}
+
 /* swiper styles  */
 
 .swiper-container {
@@ -210,7 +204,18 @@ h3 {
   justify-content: space-evenly;
 }
 
+/* About Us */
+.aboutustxt {
+  padding: 100px;
+}
+.team h1 {
+  margin: 100px;
+}
+
 /* gallery   */
+.gallery_container {
+  padding-top: 90px;
+}
 .row {
   width: 100%;
   display: flex;
@@ -292,6 +297,33 @@ h4 {
   text-transform: uppercase;
 }
 
+.projects-section {
+  padding: 5rem 0;
+}
+.projects-section .featured-text {
+  padding: 2rem;
+}
+@media (min-width: 992px) {
+  .projects-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #ba8151;
+  }
+}
+.projects-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+@media (min-width: 992px) {
+  .projects-section .project-text {
+    padding: 40px;
+  }
+  .projects-section .project-text hr {
+    border-color: #ba8151;
+    border-width: 0.25rem;
+    width: 30%;
+  }
+}
+
 .dayImg {
   display: flex;
   justify-content: center;
@@ -304,4 +336,56 @@ h4 {
 
 .dayContent {
   padding: 30px 0;
+}
+
+/* MOBILE VIEWS */
+@media (max-width: 800px) {
+  /* Gallery */
+  .column {
+    flex: 50%;
+  }
+  /* About us */
+  .team h1 {
+    margin: 20px;
+  }
+  .safaribookings {
+    float: none;
+    padding: 30px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Gallery */
+  .gallery_container {
+    padding-top: 115px;
+    margin: 0 10px;
+  }
+  .column {
+    flex: 100%;
+  }
+  /* About us */
+  .team h1 {
+    margin: 20px;
+  }
+  .aboutustxt {
+    padding: 100px 20px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 474px) {
+  /* Gallery */
+  .gallery_container {
+    padding-top: 115px;
+    margin: 0 10px;
+  }
+  /* About us */
+  .team h1 {
+    margin: 20px;
+  }
+  .aboutustxt {
+    padding: 100px 20px;
+    font-size: 40px;
+  }
 }
