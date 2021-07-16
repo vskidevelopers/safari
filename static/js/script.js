@@ -16,3 +16,10 @@ $("body").scrollspy({
   target: ".navbar",
   offset: 80,
 });
+
+function Show() {
+  var hiddnelement = document.getElementById("hidden");
+  hiddnelement.classList.toggle("hidden");
+  var readmore = document.getElementById("readmore");
+  readmore.classList.toggle("hidden");
+}
