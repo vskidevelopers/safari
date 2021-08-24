@@ -203,6 +203,11 @@ h3 {
   flex-direction: column;
   justify-content: space-evenly;
 }
+.contactDetails_center {
+  display: grid;
+  place-items: center;
+  height: 70%;
+}
 
 /* About Us */
 .aboutustxt {
