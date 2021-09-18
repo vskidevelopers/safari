@@ -368,9 +368,139 @@
 
             <!-- Book Btn -->
             <div class="col-12" style="text-align: center; padding: 20px;">
-              <button class="btn btn-success" onclick="Notavailable()">
+              <button
+                class="btn btn-success"
+                type="button"
+                data-toggle="modal"
+                data-target="#modelId"
+              >
                 Book This Safari
               </button>
+            </div>
+            <!-- Booking Modal -->
+
+            <div
+              class="modal fade"
+              id="modelId"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="modelTitleId"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Book This Trip</h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true" style="color: #fff;"
+                        >&times;</span
+                      >
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="modalcontent">
+                      <div class="container">
+                        <div
+                          class="row align-items-stretch justify-content-center no-gutters"
+                        >
+                          <div>
+                            <div class="form h-100 contact-wrap p-5">
+                              <form
+                                class="mb-5"
+                                method="post"
+                                id="contactForm"
+                                name="contactForm"
+                              >
+                                <div class="row">
+                                  <div class="col-md-6 form-group mb-3">
+                                    <label for="" class="col-form-label"
+                                      >Name *</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      name="name"
+                                      id="name"
+                                      placeholder="Your name"
+                                    />
+                                  </div>
+                                  <div class="col-md-6 form-group mb-3">
+                                    <label for="" class="col-form-label"
+                                      >Email *</label
+                                    >
+                                    <input
+                                      type="email"
+                                      class="form-control"
+                                      name="email"
+                                      id="email"
+                                      placeholder="Your email"
+                                    />
+                                  </div>
+                                </div>
+
+                                <div class="row">
+                                  <div class="col-md-12 form-group mb-3">
+                                    <label for="budget" class="col-form-label"
+                                      >Subject</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      name="subject"
+                                      id="subject"
+                                      placeholder="Your subject"
+                                    />
+                                  </div>
+                                </div>
+
+                                <div class="row mb-5">
+                                  <div class="col-md-12 form-group mb-3">
+                                    <label for="payment" class="col-form-label"
+                                      >Payment Method</label
+                                    >
+                                    <div class="col-10 px-auto">
+                                      <input
+                                        type="radio"
+                                        name="payment"
+                                        id="mpesa"
+                                        value="Mpesa"
+                                        disabled
+                                      />
+                                      Mpesa <br />
+                                      <input
+                                        type="radio"
+                                        name="payment"
+                                        id="paypal"
+                                        value="Paypal"
+                                        disabled
+                                      />
+                                      Paypal <br />
+                                    </div>
+                                  </div>
+                                </div>
+                              </form>
+                              <div class="row justify-content-center">
+                                <div class="text-center">
+                                  <input
+                                    type="submit"
+                                    value="Book Trip"
+                                    class="btn btn-block btn-success rounded-1 py-2 px-4"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
