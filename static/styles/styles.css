@@ -403,6 +403,12 @@ h4 {
 }
 
 @media (max-width: 600px) {
+  /* Swipper */
+  .swiper-slide:nth-child(1) {
+    background-image: url("../images/Sliders/elephants.jpg");
+    background-position: center;
+  }
+
   /* Gallery */
   .gallery_container {
     padding-top: 115px;
