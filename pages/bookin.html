@@ -31,6 +31,15 @@
     <link rel="stylesheet" href="../static/styles/styles.css" />
 
     <title>Booking</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_6uOWPkFPhOHWXivhaR3pk");
+      })();
+    </script>
   </head>
   <body>
     <header class="header">
@@ -444,7 +453,7 @@
                         <label for="name">Your firstname *</label>
                         <input
                           type="text"
-                          name="name"
+                          name="fname"
                           placeholder="Enter your firstname"
                           required="required"
                           class="form-control"
@@ -456,7 +465,7 @@
                         <label for="surname">Your lastname *</label>
                         <input
                           type="text"
-                          name="surname"
+                          name="lname"
                           placeholder="Enter your  lastname"
                           required="required"
                           class="form-control"
@@ -486,9 +495,9 @@
                   </div>
                   <div class="text-center">
                     <input
+                      id="bookThisTrip"
                       style="margin: 20px;"
                       type="submit"
-                      name="name"
                       value="Send message"
                       class="btn btn-success btn-block"
                     />
@@ -530,5 +539,6 @@
       integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
       crossorigin="anonymous"
     ></script>
+    <script src="../static/js/script.js"></script>
   </body>
 </html>

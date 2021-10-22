@@ -31,6 +31,15 @@
     <link rel="stylesheet" href="./static/styles/styles.css" />
 
     <title>Safaris</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_6uOWPkFPhOHWXivhaR3pk");
+      })();
+    </script>
   </head>
   <body>
     <section>
@@ -723,7 +732,7 @@
                         <label for="name">Your firstname *</label>
                         <input
                           type="text"
-                          name="name"
+                          name="fname"
                           placeholder="Enter your firstname"
                           required="required"
                           class="form-control"
@@ -735,7 +744,7 @@
                         <label for="surname">Your lastname *</label>
                         <input
                           type="text"
-                          name="surname"
+                          name="lname"
                           placeholder="Enter your  lastname"
                           required="required"
                           class="form-control"
@@ -765,9 +774,9 @@
                   </div>
                   <div class="text-center">
                     <input
+                      id="bookThisTrip"
                       style="margin: 20px;"
                       type="submit"
-                      name="name"
                       value="Send message"
                       class="btn btn-success btn-block"
                     />
@@ -781,6 +790,7 @@
     </main>
 
     <!-- scripts -->
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -810,6 +820,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./static/js/wow.min.js"></script>
+    <script src="./static/js/script.js"></script>
 
     <script>
       new WOW().init();

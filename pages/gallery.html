@@ -33,6 +33,12 @@
     <link rel="stylesheet" href="../static/styles/styles.css" />
 
     <title>Gallery</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_6uOWPkFPhOHWXivhaR3pk");
+})();
+</script>
   </head>
   <body>
     <header class="header">
@@ -255,69 +261,69 @@
             <div class="col-lg-4">
               <h3>Contact Us</h3>
               <form
-                id="contact-form"
-                method="post"
-                action="#"
-                class="contact-form"
-              >
-                <div class="controls">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="name">Your firstname *</label>
-                        <input
-                          type="text"
-                          name="name"
-                          placeholder="Enter your firstname"
-                          required="required"
-                          class="form-control"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="surname">Your lastname *</label>
-                        <input
-                          type="text"
-                          name="surname"
-                          placeholder="Enter your  lastname"
-                          required="required"
-                          class="form-control"
-                        />
-                      </div>
+              id="contact-form"
+              method="post"
+              action="#"
+              class="contact-form"
+            >
+              <div class="controls">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="name">Your firstname *</label>
+                      <input
+                        type="text"
+                        name="fname"
+                        placeholder="Enter your firstname"
+                        required="required"
+                        class="form-control"
+                      />
                     </div>
                   </div>
-                  <div class="form-group">
-                    <label for="surname">Your email *</label>
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Enter your  email"
-                      required="required"
-                      class="form-control"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="surname">Your message for us *</label>
-                    <textarea
-                      rows="4"
-                      name="message"
-                      placeholder="Enter your message"
-                      required="required"
-                      class="form-control"
-                    ></textarea>
-                  </div>
-                  <div class="text-center">
-                    <input
-                      style="margin: 20px;"
-                      type="submit"
-                      name="name"
-                      value="Send message"
-                      class="btn btn-success btn-block"
-                    />
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="surname">Your lastname *</label>
+                      <input
+                        type="text"
+                        name="lname"
+                        placeholder="Enter your  lastname"
+                        required="required"
+                        class="form-control"
+                      />
+                    </div>
                   </div>
                 </div>
-              </form>
+                <div class="form-group">
+                  <label for="surname">Your email *</label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter your  email"
+                    required="required"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="surname">Your message for us *</label>
+                  <textarea
+                    rows="4"
+                    name="message"
+                    placeholder="Enter your message"
+                    required="required"
+                    class="form-control"
+                  ></textarea>
+                </div>
+                <div class="text-center">
+                  <input
+                    id="bookThisTrip"
+                    style="margin: 20px;"
+                    type="submit"
+                    value="Send message"
+                    class="btn btn-success btn-block"
+                  />
+                </div>
+              </div>
+            </form>
             </div>
           </div>
         </div>
@@ -356,5 +362,6 @@
       integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
       crossorigin="anonymous"
     ></script>
+    <script src="../static/js/script.js"></script>
   </body>
 </html>

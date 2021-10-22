@@ -24,26 +24,32 @@ function Show() {
   readmore.classList.toggle("hidden");
 }
 
-// const btn = document.getElementById("bookThisTrip");
-// document
-//   .getElementById("bookTripForm")
-//   .addEventListener("submit", function (event) {
-//     event.preventDefault();
+const btn = document.getElementById("bookThisTrip");
+document
+  .getElementById("contact-form")
 
-//     btn.value = "Sending...";
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
 
-//     const serviceID = "service_2npiics";
-//     const templateID = "template_3wwazs9";
+    btn.value = "Sending...";
 
-//     emailjs.sendForm(serviceID, templateID, this).then(
-//       () => {
-//         btn.value = "Send Email";
-//         alert("Sent!");
-//         document.bookTripForm.reset();
-//       },
-//       (err) => {
-//         btn.value = "Send Email";
-//         console.log(JSON.stringify(err));
-//       }
-//     );
-//   });
+    const serviceID = "service_mtkmfsb";
+    const templateID = "template_ynbjg8a";
+
+    emailjs.sendForm(serviceID, templateID, this).then(
+      () => {
+        btn.value = "Send Email";
+        alert("Sent!");
+        document.getElementById("contact-form").reset();
+      },
+      (err) => {
+        btn.value = "Send Email";
+        alert(
+          "An error occured while sending your message. send it after some time"
+        );
+        console.error(err);
+        // alert(JSON.stringify(err));
+        document.getElementById("contact-form").reset();
+      }
+    );
+  });

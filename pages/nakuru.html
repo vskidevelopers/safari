@@ -9,10 +9,10 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link
-    rel="shortcut icon"
-    href="../static/images/favicon.png"
-    type="image/x-icon"
-  />
+      rel="shortcut icon"
+      href="../static/images/favicon.png"
+      type="image/x-icon"
+    />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -25,6 +25,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../static/styles/styles.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_6uOWPkFPhOHWXivhaR3pk");
+      })();
+    </script>
   </head>
   <body>
     <!-- NavBar -->
@@ -547,7 +556,7 @@
                       <label for="name">Your firstname *</label>
                       <input
                         type="text"
-                        name="name"
+                        name="fname"
                         placeholder="Enter your firstname"
                         required="required"
                         class="form-control"
@@ -559,7 +568,7 @@
                       <label for="surname">Your lastname *</label>
                       <input
                         type="text"
-                        name="surname"
+                        name="lname"
                         placeholder="Enter your  lastname"
                         required="required"
                         class="form-control"
@@ -589,9 +598,9 @@
                 </div>
                 <div class="text-center">
                   <input
+                    id="bookThisTrip"
                     style="margin: 20px;"
                     type="submit"
-                    name="name"
                     value="Send message"
                     class="btn btn-success btn-block"
                   />
