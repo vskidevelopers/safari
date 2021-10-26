@@ -24,10 +24,10 @@ function Show() {
   readmore.classList.toggle("hidden");
 }
 
-const btn = document.getElementById("bookThisTrip");
+const btn = document.getElementById("sendMessage");
+const bookbtn = document.getElementById("bookThisTrip");
 document
   .getElementById("contact-form")
-
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -50,6 +50,35 @@ document
         console.error(err);
         // alert(JSON.stringify(err));
         document.getElementById("contact-form").reset();
+      }
+    );
+  });
+
+// BOOK TRIP
+document
+  .getElementById("bookTripForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    bookbtn.value = "Booking...";
+
+    const serviceID = "service_mtkmfsb";
+    const templateID = "template_l1dsf98";
+
+    emailjs.sendForm(serviceID, templateID, this).then(
+      () => {
+        bookbtn.value = "Book Trip";
+        alert("Trip Booked! Our team will get back to you in no time.");
+        document.getElementById("bookTripForm").reset();
+      },
+      (err) => {
+        bookbtn.value = "Book Trip";
+        alert(
+          "An error occured while sending your message. send it after some time"
+        );
+        console.error(err);
+        // alert(JSON.stringify(err));
+        document.getElementById("bookTripForm").reset();
       }
     );
   });
